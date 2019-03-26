@@ -88,3 +88,10 @@ turtleMovement.filter(function(steps){
     }
 })
 
+turtleMovement.map(function(allSteps){
+    return allSteps[0] + allSteps[1];
+})
+
+turtleMovement.forEach(function(turtleSteps){
+    return console.log (turtleSteps[0] + turtleSteps[1]);
+})
