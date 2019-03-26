@@ -109,11 +109,29 @@ turtleMovement.forEach(function(turtleSteps){
 
 
 // exercise 5
-let a= 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
-let b=a.split(' ');
-let c=b.map(function(x){if (x.length<=3){return ' '}else{return x.toUpperCase().charAt(x.length-1)}})
+let a = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+
+let b=a.split(' ').map(function(x){
+    if (x.length<=3) {
+        return ' '
+    } else {
+        return x.toUpperCase().charAt(x.length-1)
+    }
+}).reduce(reducer);
+
+// let b = a.split(' ');
+// let c = b.map(function(x){ 
+//     if (x.length<=3){
+//         return ' '
+//     } else {
+//         return x.toUpperCase().charAt(x.length-1)
+//     }
+// })
 const reducer = (w, y) => w + y;
-let d=c.reduce(reducer);
+// let d = c.reduce(reducer);
+
+
+
 
 
 // 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
