@@ -76,3 +76,15 @@ const rocksWarning = hazardWarningCreator('Rocks on the Road');
 rocksWarning('somewhere');
 rocksWarning('somewhere nearby');
 rocksWarning('somewhere else');
+
+let turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+turtleMovement.filter(function(steps){
+    if (steps[0] < 0){
+        return false;
+    } else if (steps[1] < 0) {
+        return false;
+    } else {
+        return true;
+    }
+})
+
