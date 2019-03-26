@@ -1,3 +1,5 @@
+//Redone Min/Max using while loops instead of for loops
+
 function max(numbers) {
     console.log(numbers)
     let myMax = numbers[0];  
@@ -27,12 +29,17 @@ function max(numbers) {
         fn();
     }
 }
+
+//Exercise 1
+
 function hello(){
     return console.log('Hello World');
 }
 function goodbye(){
     return console.log('Goodbye world');
 }
+
+// Exercise 2
 function filter(names,fn) {
     // TASK: Define your function here
     out=[];
@@ -59,6 +66,7 @@ const filteredNames = filter(myNames, function(name) {
 console.log(filteredNames) // => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
 
+// Exercise 3. 
 function hazardWarningCreator(typeOfWarning) {
     let warningCounter = 0;
     let time = '';
@@ -77,6 +85,9 @@ rocksWarning('somewhere');
 rocksWarning('somewhere nearby');
 rocksWarning('somewhere else');
 
+
+
+// Exercise 4
 let turtleMovement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 turtleMovement.filter(function(steps){
     if (steps[0] < 0){
@@ -95,3 +106,4 @@ turtleMovement.map(function(allSteps){
 turtleMovement.forEach(function(turtleSteps){
     return console.log (turtleSteps[0] + turtleSteps[1]);
 })
+
