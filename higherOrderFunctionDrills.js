@@ -59,4 +59,11 @@ const filteredNames = filter(myNames, function(name) {
 console.log(filteredNames) // => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
 
-  
+function hazardWarningCreator (typeOfWarning) {
+    function createWarningCounter () {
+        let warningCounter = 0    
+        
+    }
+    
+
+}
